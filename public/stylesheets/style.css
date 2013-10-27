@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+.meals {
+  font-size: 2em;
+  line-height: 2em;
+  padding: 10px;
+}
+.meal {
+  transition: background-color 250ms;
+}
+.meal:hover {
+  background-color: #a0f2f2;
+}

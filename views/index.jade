@@ -1,0 +1,24 @@
+extends layout
+
+block javascripts
+  script(src='/javascripts/index.js')
+
+block content
+  h1= time
+  h2 Breakfast
+  .meals
+    - for(var i = 0; i < breakfast.length; i++)
+      span.meal(data-id=breakfast[i])= breakfast[i]
+      br
+  h2 Lunch
+  .meals
+    - for(var i = 0; i < lunch.length; i++)
+      span.meal(data-id=lunch[i])= lunch[i]
+      - if(i !== lunch.length - 1)
+        span ,&nbsp;
+  h2 Dinner
+  .meals
+    - for(var i = 0; i < dinner.length; i++)
+      span.meal(data-id=dinner[i])= dinner[i]
+      - if(i !== dinner.length - 1)
+        span ,&nbsp;
